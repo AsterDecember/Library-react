@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ElementTable from './components/ElementTable';
+import ElementView from './components/ElementView';
 
 class App extends Component {
   render() {
@@ -14,9 +14,9 @@ class App extends Component {
         <p className="App-intro">
           Biblioteca
         </p>
-          <ElementTable>
+          <ElementView>
 
-          </ElementTable>
+          </ElementView>
       </div>
     );
   }
