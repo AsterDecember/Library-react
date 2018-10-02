@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {loadAllElements} from '../actions/allElements';
 import ElementTable from './ElementTable';
+import CreateElement from './CreateElement';
 
 class ElementsView extends Component{
 
@@ -13,24 +14,23 @@ class ElementsView extends Component{
     render(){
         return (
             <div>
+                <CreateElement/>
                 <h4>Main Component View!</h4>
-                <ElementTable/>
+                <ElementTable elemets={this.props.allElements} />
             </div>
         );
     }
 
 }
 
-//Set the main stage to props i need to use on this component
+//Set the main stage to props i need to use on this component(get the reducer state to the component to be able)
 const mapStateToProps = (state) => {
     const {
-        allGifs,
-        searchGifs
+        allElements
     } = state;
 
     return {
-        allGifs,
-        searchGifs
+        allElements
     };
 };
 

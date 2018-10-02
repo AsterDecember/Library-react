@@ -4,8 +4,9 @@ const allElements = (state = {}, action) => {
     //manage the action type
     switch (action.type) {
         case FETCH_ALL_ELEMENTS:
-            const { elements } = action.payload;
-            return {...state,...elements};
+            console.log('fetch');
+            const { elementPost } = action.payload;
+            return {...state,...elementPost};
         default:
             return state;
     }
