@@ -1,10 +1,19 @@
 import React from 'react';
 import ElementList from "./ElementList";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {createElement} from '../actions/allElements';
 
 const CreateElement = (props) => {
 
     const createBook = (e) => {
-        console.log(e.target.value)
+        console.log(document.getElementById('id').value);
+        //let element =
+        props.createElement(
+            {
+                id: document.getElementById('id').value,
+                name: document.getElementById('name').value
+            });
     }
 
     return (
@@ -19,4 +28,13 @@ const CreateElement = (props) => {
     );
 }
 
-export default CreateElement;
+//Set the acction is going to be trigerred on this component
+const mapDispatchToProps = (dispatch) => {
+
+    return bindActionCreators({
+        createElement
+    }, dispatch);
+
+};
+
+export default connect(null, mapDispatchToProps)(CreateElement);
