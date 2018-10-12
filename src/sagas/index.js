@@ -19,12 +19,10 @@ const arrayToObj = (arr) => {
 
 //using axios fot http post
 export const axiosPost = (data) => {
-    return axios.post(apiUrlDB,{
-        id: 11,
-        name: 'pruebaAxios'
-    })
+    return axios.post(apiUrlDB,data.element.payload)
         .then(function (response) {
             console.log(response);
+            console.log(data);
         })
         .catch(function (error) {
             console.log(error);
