@@ -1,8 +1,8 @@
 import React from 'react';
-import ElementList from "./ElementList";
+import ElementList from "../ElementList/ElementList";
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {createElement} from '../actions/allElements';
+import {createElement} from '../../actions/allElements';
 
 const CreateElement = (props) => {
 

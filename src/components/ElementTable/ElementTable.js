@@ -1,6 +1,6 @@
 import React from 'react';
-import ElementList from './ElementList';
-import Element from "./Element";
+import ElementList from '../ElementList/ElementList';
+import Element from "../Element/Element";
 
 const ElementTable = (props) => {
 

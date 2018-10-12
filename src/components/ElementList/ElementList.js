@@ -1,5 +1,5 @@
 import React from 'react';
-import Element from './Element';
+import Element from '../Element/Element';
 
 const ElementList = () => {
     return (

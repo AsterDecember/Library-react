@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {loadAllElements} from '../../actions/allElements';
-import ElementTable from '../ElementTable';
-import CreateElement from '../CreateElement';
+import ElementTable from '../ElementTable/ElementTable';
+import CreateElement from '../CreateElement/CreateElement';
 import { ElementBanner } from './ElementView.styled';
 
 class ElementsView extends Component{
