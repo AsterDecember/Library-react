@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {loadAllElements} from '../actions/allElements';
-import ElementTable from './ElementTable';
-import CreateElement from './CreateElement';
+import {loadAllElements} from '../../actions/allElements';
+import ElementTable from '../ElementTable';
+import CreateElement from '../CreateElement';
+import { ElementBanner } from './ElementView.styled';
 
 class ElementsView extends Component{
 
@@ -14,8 +15,10 @@ class ElementsView extends Component{
     render(){
         return (
             <div>
-                <CreateElement/>
-                <h4>Main Component View!</h4>
+                {/* <CreateElement/> */}
+                <ElementBanner>
+                    <h1>FCC Library</h1>
+                </ElementBanner>
                 <ElementTable elemets={this.props.allElements} />
             </div>
         );
