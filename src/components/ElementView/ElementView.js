@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {loadAllElements} from '../../actions/allElements';
 import ElementTable from '../ElementTable/ElementTable';
-import CreateElement from '../CreateElement/CreateElement';
-import { ElementBanner } from './ElementView.styled';
+import Container from '../Container/Container';
+// import CreateElement from '../CreateElement/CreateElement';
+// import { ElementBanner } from './ElementView.styled';
 
 class ElementsView extends Component{
 
@@ -16,7 +17,9 @@ class ElementsView extends Component{
         return (
             <div>
                 {/* <CreateElement/> */}
-                <ElementTable elemets={this.props.allElements} />
+                <Container>
+                    <ElementTable elemets={this.props.allElements} />
+                </Container>
             </div>
         );
     }
