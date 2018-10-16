@@ -16,9 +16,6 @@ class ElementsView extends Component{
         return (
             <div>
                 {/* <CreateElement/> */}
-                <ElementBanner>
-                    <h1>FCC Library</h1>
-                </ElementBanner>
                 <ElementTable elemets={this.props.allElements} />
             </div>
         );
