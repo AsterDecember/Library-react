@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavBarContainer = styled.nav`
     height: 64px;
     line-height: 64px;
-    background-color: #3B82A3;
+    background-color: #153b5a;
     color: #fff;
 `;
 
@@ -46,7 +46,7 @@ const NavBarLink = styled.a`
     text-decoration: none;
 
     &:hover {
-        background-color: #2c617a;
+        background-color: #1c507a;
     }
 `;
 

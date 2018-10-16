@@ -20,7 +20,7 @@ const NavBar = (props) => {
 
                 <NavBarList>
                     <NavBarListItem>
-                        <NavBarLink><i className="fas fa-plus"></i> Add Book</NavBarLink>
+                        <NavBarLink><i className="fas fa-plus"></i> Agregar Libro</NavBarLink>
                     </NavBarListItem>
                 </NavBarList>
 
