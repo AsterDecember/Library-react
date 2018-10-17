@@ -48,10 +48,34 @@ const ModalFooter = styled.div`
 }
 `;
 
+const ModalButton = styled.a`
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+}
+`;
+
 
 export {
     ModalOverlay,
     ModalContainer,
     ModalContent,
     ModalFooter,
+    ModalButton,
 };

@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar/>
-        <ElementView/>
-        {/* <Modal /> */}
-        <div id="modal-root"></div>
+        <ElementView/> 
       </div>
     );
   }
