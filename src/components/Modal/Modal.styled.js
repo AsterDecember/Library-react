@@ -43,7 +43,7 @@ const ModalFooter = styled.div`
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
-    width: 100%;
+    /* width: 100%; */
     text-align: right;
 }
 `;
